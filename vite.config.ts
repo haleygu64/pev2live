@@ -9,12 +9,12 @@ export default defineConfig({
 
   server: {
     port: 4200,
-    host: 'localhost',
+    host: 'localhost'
   },
 
   preview: {
     port: 4300,
-    host: 'localhost',
+    host: 'localhost'
   },
 
   plugins: [vue(), nxViteTsPaths()],
@@ -25,12 +25,12 @@ export default defineConfig({
   // },
 
   build: {
-    outDir: './dist/pev2live',
+    outDir: './dist/',
     emptyOutDir: true,
     reportCompressedSize: true,
     commonjsOptions: {
-      transformMixedEsModules: true,
-    },
+      transformMixedEsModules: true
+    }
   },
 
   test: {
@@ -42,7 +42,9 @@ export default defineConfig({
     reporters: ['default'],
     coverage: {
       reportsDirectory: './coverage/pev2live',
-      provider: 'v8',
-    },
+      provider: 'v8'
+    }
   },
+
+  base: '/pev2live/'
 });
