@@ -9,6 +9,8 @@
   },
   "private": true,
   "dependencies": {
+    "bootstrap": "^5.3.3",
+    "pev2": "^1.12.1",
     "vue": "^3.3.4"
   },
   "devDependencies": {
